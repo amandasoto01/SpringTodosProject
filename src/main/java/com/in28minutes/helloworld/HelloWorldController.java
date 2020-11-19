@@ -1,4 +1,4 @@
-package com.in28minutes;
+package com.in28minutes.helloworld;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,8 +21,8 @@ public class HelloWorldController {
 	//hello-world-bean
 	@GetMapping(path="/hello-world-bean")
 	public HelloWorldBean helloWorldBean() {
-		throw new RuntimeException("Some Error has Happened! Contact Support at ***-***");
-		//return new HelloWorldBean("Hello World - Changed");
+		//throw new RuntimeException("Some Error has Happened! Contact Support at ***-***");
+		return new HelloWorldBean("Hello World - Changed");
 	}
 	
 	//hello-world/path-variable/in28miunutes
@@ -31,4 +31,17 @@ public class HelloWorldController {
 		return new HelloWorldBean(String.format("Hello World, %s",name));
 	} 
 	
+	/*Retrieve all todos for a user
+	GET /users/{user_name}/todos
+	
+	Delete a todo of a user
+	DELETE  /users/{user_name}/todos/{todo_id}
+	
+	Edit/Update a todo
+	PUT /users/{user_name}/todos/{todo_id}
+	
+	Create a new todo
+	POST /users/{user_name}/todos/
+	
+	*/
 }
