@@ -1,4 +1,4 @@
-package com.in28minutes.basicauth;
+package com.basicauth;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

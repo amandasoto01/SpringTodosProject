@@ -1,4 +1,4 @@
-package com.in28minutes.basicauth;
+package com.basicauth;
 
 public class AuthenticationBean  {
 	

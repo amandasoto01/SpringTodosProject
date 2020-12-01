@@ -1,4 +1,4 @@
-package com.in28minutes.basicauth;
+package com.basicauth;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
